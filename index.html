@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tree Thing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div id="Top">
+    <h1> Old : New Growth Calculator </h1>
+</div>
+
+<div id="MainContainer">
+
+    <form onkeydown="return event.key != 'Enter';">
+        <label>What type of forest</label>
+        <input id="name">
+        <br><br>
+        <label id="crazyLabel">Whats the area of land</label>
+        <br>
+        <label id="crazyNumber" class="feedback">5</label>
+        <input type="range" min="0" max="20" value="10" class="slider" id="crazy">
+        <br><br>
+        <label id="hotLabel">some other variable for input</label>
+        <br>
+        <label id="hotNumber" class="feedback">5</label>
+        <input type="range" min="0" max="20" value="10" class="slider" id="hot">
+        <br><br>
+        <label id="personalityLabel">some other variable for input</label>
+        <br>
+        <label id="personalityNumber" class="feedback">5</label>
+        <input type="range" min="0" max="20" value="10" class="slider" id="personalityWeight">
+        <br><br><br>
+
+        <button id="CalculateScore" type="button">calculate ratio</button>
+        <br><br>
+        <button id="RemovePerson" type="button">remove person</button>
+
+    </form>
+    <h2 id="Score"></h2>
+
+    <h3 id="Rating"></h3>
+
+    <br><br>
+
+    <canvas id="graph"></canvas>
+</div>
+
+<script src="js/index.js"></script>
+
+
+</body>
+</html>
